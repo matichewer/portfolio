@@ -101,3 +101,17 @@
     text-align: justify;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .details-container {
+     flex: 0 0 calc(50% - 20px); /* Ajusta el tamaño para pantallas pequeñas */
+  }
+ }
+ 
+ @media screen and (max-width: 480px) {
+  .details-container {
+     flex: 0 0 100%; /* Ajusta el tamaño para pantallas muy pequeñas */
+  }
+ }
+ 
