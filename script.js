@@ -1,12 +1,3 @@
-/*
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
-*/
-
 window.addEventListener("DOMContentLoaded", () => {
   fetch("projects.csv")
     .then((response) => response.text())
@@ -40,7 +31,7 @@ function parseCSV(csv) {
 function createProjectElement(project) {
   // Crear el contenedor principal para cada proyecto
   const projectContainer = document.createElement("div");
-  projectContainer.className = "about-container"; // Añadir la clase about-container
+  projectContainer.className = "about-container"; 
 
   // Crear el contenedor de detalles del proyecto
   const detailsContainer = document.createElement("div");
@@ -76,7 +67,7 @@ function createProjectElement(project) {
 
   // Crear el botón de Github
   const githubBtn = document.createElement("button");
-  githubBtn.className = "btn btn-color-2 project-btn";
+  githubBtn.className = "btn";
   githubBtn.textContent = "Github";
   githubBtn.onclick = () => (window.location.href = project.GithubLink);
   btnContainer.appendChild(githubBtn);
@@ -84,7 +75,7 @@ function createProjectElement(project) {
   // Crear el botón de Live Demo solo si el proyecto tiene un enlace de demostración
   if (project.LiveDemoLink) {
     const liveDemoBtn = document.createElement("button");
-    liveDemoBtn.className = "btn btn-color-2 project-btn";
+    liveDemoBtn.className = "btn";
     liveDemoBtn.textContent = "Live Demo";
     liveDemoBtn.onclick = () => (window.location.href = project.LiveDemoLink);
     btnContainer.appendChild(liveDemoBtn);

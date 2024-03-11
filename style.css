@@ -22,6 +22,8 @@ p {
   color: rgb(85, 85, 85);
 }
 
+
+
 /* TRANSITION */
 
 a,
@@ -67,6 +69,8 @@ section {
 .section-container {
   display: flex;
 }
+
+
 
 /* PROFILE SECTION */
 
@@ -135,71 +139,20 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
-}
-
-.btn-color-1,
-.btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
   cursor: pointer;
+  border: 0.13rem solid rgb(53, 53, 53); 
+  background: none;
+  
 }
 
-.btn-color-1,
-.btn-color-2:hover {
+.btn:hover {
+  cursor: pointer;
   background: rgb(53, 53, 53);
   color: white;
 }
 
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
 
-.btn-color-2 {
-  background: none;
-}
 
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-  gap: 1rem;
-}
-
-/* ABOUT SECTION */
-
-#about {
-  position: relative;
-}
-
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
 
 
 .details-container {
@@ -230,10 +183,7 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
-  position: relative;
-}
-
+/*
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
@@ -243,8 +193,8 @@ section {
 
 .experience-details-container {
   display: flex;
-  /*justify-content: center;*/
-  /*flex-direction: column;*/
+ /* justify-content: center;
+  /*flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -269,12 +219,21 @@ article .icon {
   cursor: default;
 }
 
+*/
 /* PROJECTS SECTION */
 
 #projects {
   position: relative;
   min-height: 100vh; 
 }
+
+
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 
 .color-container {
   border-color: rgb(163, 163, 163);
@@ -300,10 +259,16 @@ article .icon {
   color: black;
 }
 
+.description-margin {
+  margin-bottom: 20px; /* Ajusta este valor según tus necesidades */
+ }
+
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
 }
+
+
 
 /* FOOTER SECTION */
 
@@ -319,16 +284,3 @@ footer p {
 
 
 
-
-
-
-
-
-.description-margin {
-  margin-bottom: 20px; /* Ajusta este valor según tus necesidades */
- }
- #projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
