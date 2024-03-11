@@ -272,10 +272,8 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
-
- display: none;
-  /*position: relative;
-  min-height: 100vh; */
+  position: relative;
+  min-height: 100vh; 
 }
 
 .color-container {
