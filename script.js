@@ -83,3 +83,35 @@ function createProjectElement(project) {
 
   return projectContainer; // Devolver el contenedor principal del proyecto
 }
+
+
+function scrollToProjects() {
+  const projectsSection = document.getElementById("projects");
+  projectsSection.scrollIntoView({ behavior: "smooth" });
+}
+/*
+function scrollToProjects() {
+  document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('scroll-arrow-container').style.display = 'none'; // Oculta el contenedor de la flecha
+}
+*/
+
+var isArrowVisible = false; // Variable para controlar la visibilidad de la flecha
+window.addEventListener('scroll', function() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var windowHeight = window.innerHeight;
+    var profileSectionHeight = document.getElementById('profile').offsetHeight;
+    var scrollArrowContainer = document.getElementById('arrow');
+
+    if (scrollTop < windowHeight * 0.1 && scrollTop < profileSectionHeight) { // Ajusta el umbral a un 10% de la altura de la ventana
+        if (!isArrowVisible) {
+            scrollArrowContainer.style.display = 'block';
+            isArrowVisible = true;
+        }
+    } else {
+        if (isArrowVisible) {
+            scrollArrowContainer.style.display = 'none';
+            isArrowVisible = false;
+        }
+    }
+});
