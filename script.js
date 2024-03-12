@@ -13,6 +13,13 @@ window.addEventListener("DOMContentLoaded", () => {
     .catch((error) => console.error("Error fetching projects:", error));
 });
 
+
+function scrollToProjects() {
+  const projectsSection = document.getElementById("projects");
+  projectsSection.scrollIntoView({ behavior: "smooth" });
+}
+
+
 function parseCSV(csv) {
   const rows = csv.split(/\r?\n/).map((row) => row.split(";"));
   const headers = rows[0];
@@ -82,12 +89,6 @@ function createProjectElement(project) {
   }
 
   return projectContainer; // Devolver el contenedor principal del proyecto
-}
-
-
-function scrollToProjects() {
-  const projectsSection = document.getElementById("projects");
-  projectsSection.scrollIntoView({ behavior: "smooth" });
 }
 
 var isArrowVisible = false; // Variable para controlar la visibilidad de la flecha
