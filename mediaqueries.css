@@ -1,3 +1,4 @@
+/*
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -7,7 +8,7 @@
     height: fit-content;
   }
 }
-
+*/
 @media screen and (max-width: 1200px) {
   #profile {
     display: block;
@@ -46,6 +47,9 @@
     width: 300px;
     height: 300px;
     margin: 2rem auto 4rem;
+  }
+  .project-card {
+    margin-bottom: 7px; /* Espacio entre filas */
   }
 }
 
@@ -87,4 +91,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   }
   
+  .project-card {
+    margin-bottom: 3px; /* Espacio entre filas */
+  }
 }
