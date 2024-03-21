@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="/js-social-preview/social-preview.css" />
+  <script type="application/javascript" src="/js-social-preview/social-preview.js"></script>
 </head>
 
 <body>
@@ -43,6 +46,32 @@
     </div>
   </section>
 
+
+ 
+
+
+
+  <div id="social_preview"></div>
+  <script>
+    document.getElementById('social_preview').innerHTML = social_preview.small({
+        title: 'PDF Password Remover',
+        description: 'Una herramienta para remover contraseñas de archivos PDF.',
+        site: 'GitHub',
+        url: 'https://github.com/matichewer/PDF-Password-Remover',
+        img: 'assets/pdf-password-remover.png',
+    });
+    </script>
+    
+    
+    
+
+
+
+
+
+
+
+
   <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToProjects()" />
   <div id="scroll-arrow-container">
     <div class="scroll-down-arrow" onclick="scrollToProjects()"></div>
@@ -61,7 +90,7 @@
   <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
-    <div id="projects-container" class="experience-details-container">
+    <div id="projects-container">
       <!-- Los proyectos se cargarán aquí dinámicamente -->
     </div>
     <!--
