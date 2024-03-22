@@ -158,30 +158,49 @@ section {
 }
 
 #projects-container {
+  /*
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
   gap: 25px;
-  justify-items: center; /* Centers items horizontally */
-  align-items: center; /* Centers items vertically */
+  justify-items: center; 
+  align-items: center; */
+
+ /* display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  justify-items: center;  
+  align-items: center; */
+
+ column-count: 3; /* Adjust the number of columns as needed */
+ column-gap: 1.5rem; /* Adjust the gap between columns */
+ padding: 0rem; /* Add some padding around the container */
 }
 
 .project-card {
-  /*padding: 1.5rem;*/
   background: white;
   border-radius: 2rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Sombra */
   border: 1px solid rgba(0, 0, 0, 0.1); /* Borde más suave */
- /* border: rgb(53, 53, 53) 0.12rem solid; */
-  /*border-color: rgb(163, 163, 163);*/
   text-align: center;
-  max-width: 700px; 
-  max-height: 500px;
- /* flex: 0 0 calc(33.33% - 20px); */
-  margin-bottom: 10px; /* Espacio entre filas */
+  max-width: 600px; 
+ /* max-height: 600px; */
   border-color: rgb(68, 68, 68);
   background: rgb(250, 250, 250);
   display: flex;
   flex-direction: column;
+  flex: 1 0 400px;
+  margin: 1rem;
+  justify-items: center;  
+  align-items: center; 
+
+  width: 100%; /* Make the cards take full width of the column */
+  display: inline-block;
+  margin-bottom: 1rem; /* Add some space between cards */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+
+  /* no se si sirva lo de abajo */
+  break-inside: avoid;
+  page-break-inside: avoid;
 } 
 
 img-container {
@@ -189,7 +208,9 @@ img-container {
 }
 
 .card-img {
-  border-radius: 2rem;
+  /*border-radius: 2rem; */
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
   width: 100%;
   height: 100%;
 }
@@ -210,21 +231,24 @@ img-container {
 }
 
 .card-description {
-  margin-bottom: 20px; /* Ajusta este valor según tus necesidades */
+  /*margin-bottom: 20px; */
+  margin: 1rem;
 }
 
 
 
 /* FOOTER SECTION */
 
-footer {
-  height: 26vh;
+footer {  
   margin: 0 1rem;
-}
-
-footer p {
+  position: fixed;
+  margin-top: auto;
+  flex-shrink: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(63, 63, 63);
   text-align: center;
 }
+
 
 
 
