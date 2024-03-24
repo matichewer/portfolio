@@ -126,6 +126,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin: 2rem;
 }
 
 .btn {
@@ -137,7 +138,6 @@ section {
   cursor: pointer;
   border: 0.13rem solid rgb(53, 53, 53); 
   background: none;
-  
 }
 
 .btn:hover {

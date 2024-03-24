@@ -171,31 +171,7 @@ function createProjectElement(project) {
   const img = document.createElement("img");
   img.alt = project.Title;
   img.className = "card-img";
-  
-  // Verificar si project.Image está vacío
-  if (project.Image.trim() === "") {
-    // Si está vacío, obtener la imagen de project.GithubLink mediante la API de LinkPreview
-    const key = "075f79d79c9a3861f50194f6c15b2119";
-    const data = { q: project.GithubLink };
-
-    fetch("https://api.linkpreview.net", {
-      method: "POST",
-      headers: {
-        'X-Linkpreview-Api-Key': key,
-      },
-      mode: "cors",
-      body: JSON.stringify(data)
-    })
-    .then((res) => res.json())
-    .then((response) => {
-      img.src = response.image;
-    })
-    .catch((error) => console.error("Error fetching image:", error));
-  } else {
-    // Si project.Image no está vacío, usar la imagen proporcionada en project.Image
-    img.src = project.Image;
-  }
-
+  img.src = project.Image;
   imgContainer.appendChild(img);
   cardContainer.appendChild(imgContainer);
 
