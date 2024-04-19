@@ -17,6 +17,6 @@ You can access my portfolio website at https://portfolio.chewer.net. Feel free t
 
 ## Screenshots
 
-![](screenshot1.png)
+![](screenshot-1.png)
 
-![](screenshot2.png)
+![](screenshot-2.png)
