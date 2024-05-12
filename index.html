@@ -10,97 +10,72 @@
   <link rel="stylesheet" href="mediaqueries.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <link rel="stylesheet" href="/js-social-preview/social-preview.css" />
-  <script type="application/javascript" src="/js-social-preview/social-preview.js"></script>
 </head>
 
 <body>
   <div class="content">
 
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile-pic-circle.png?v=timestamp" alt="Matias profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello! I'm</p>
-      <h1 class="title">Matias David Schwerdt</h1>
-      <p class="section__text__p2">Software engineering student</p>
-
-      <div class="btn-container">
-        <button class="btn btn-color" onclick="window.open('./assets/resume-example.pdf')">
-          Download CV
-        </button>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-circle.png?v=timestamp" alt="Matias profile picture" />
       </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello! I'm</p>
+        <h1 class="title">Matias David Schwerdt</h1>
+        <p class="section__text__p2">Software engineering student</p>
 
-      <div id="socials-container">
-        <a href="https://www.linkedin.com/in/matiasschwerdt/" target="_blank">
-          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
-        </a>
-        <a href="https://github.com/matichewer" target="_blank">
-          <img src="./assets/github.png" alt="My Github profile" class="icon" />
-        </a>
-        <a href="mailto:schwerdt.matias@gmail.com">
-          <img src="./assets/email2.png" alt="Email icon" class="icon" />
-        </a>
-        <p> schwerdt.matias@gmail.com</p>
+        <div class="btn-container">
+          <button class="btn btn-color" onclick="window.open('./assets/resume-example.pdf')">
+            Download CV
+          </button>
+        </div>
+
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/matiasschwerdt/" target="_blank">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+          </a>
+          <a href="https://github.com/matichewer" target="_blank">
+            <img src="./assets/github.png" alt="My Github profile" class="icon" />
+          </a>
+          <a href="mailto:schwerdt.matias@gmail.com">
+            <img src="./assets/email2.png" alt="Email icon" class="icon" />
+          </a>
+          <p> schwerdt.matias@gmail.com</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
- 
-
-
-
-  <div id="social_preview"></div>
-  <script>
-    document.getElementById('social_preview').innerHTML = social_preview.small({
+    <div id="social_preview"></div>
+    <script>
+      document.getElementById('social_preview').innerHTML = social_preview.small({
         title: 'PDF Password Remover',
         description: 'Una herramienta para remover contraseñas de archivos PDF.',
         site: 'GitHub',
         url: 'https://github.com/matichewer/PDF-Password-Remover',
         img: 'assets/pdf-password-remover.png',
-    });
+      });
     </script>
-    
-    
-    
 
 
-
-
-
-
-
-
-  <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToProjects()" />
-  <div id="scroll-arrow-container">
-    <div class="scroll-down-arrow" onclick="scrollToProjects()"></div>
-  </div>
- -->
- <div id="scroll-arrow-container">
-  <div class="arrow" onclick="scrollToProjects()">
-    <span></span>
-    <span></span>
-<!--    <span></span> -->
-</div>
-</div>
-
-
-
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div id="projects-container">
-      <!-- Los proyectos se cargarán aquí dinámicamente -->
+    <div id="scroll-arrow-container">
+      <div class="arrow" onclick="scrollToProjects()">
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <!--
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-        -->
-  </section>
+
+
+
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div id="projects-container">
+        <!-- Los proyectos se cargarán aquí dinámicamente -->
+      </div>
+    </section>
 
   </div>
-<!--
+  <!--
   <footer>
     Copyright &#169; 2024 Matias David Schwerdt. All Rights Reserved.
   </footer>

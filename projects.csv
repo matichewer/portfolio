@@ -1,13 +1,14 @@
 Title;Description;GithubLink;LiveDemoLink;Image
-Burger Planet - Frontend;A burger shop made in React for the project of "Ingenieria de aplicaciones web" from UNS;https://github.com/matichewer/IoT-Impact-js/;https://iot-impact-js.vercel.app/;assets/IoT-Impact-js.png
+Burger Planet - Frontend;A burger shop made in React for the project of "Ingenieria de aplicaciones web" from UNS;https://github.com/matichewer/IoT-Impact-js/;https://iot-impact-js.vercel.app/;assets/IoT-Impact-js-2.png
 Castle Defense;A Tower Defense video game written in Java, developed as a project for the "Tecnología de programación" subject at Universidad Nacional del Sur (UNS).;https://github.com/matichewer/Castle-Defense;;assets/Castle-Defense.png
 Burger Planet - Backend;An admin panel and API for a burger shop made with Laravel for the project of "Ingenieria de aplicaciones web" from UNS;https://github.com/matichewer/IoT-Impact-laravel/;;assets/IoT-Impact-laravel.png
-;;https://github.com/matichewer/PDF-Password-Remover;;assets/PDF-Password-Remover-preview.png
-Burger Planet - API;An alternative API for a burger shop made with NodeJS for the project of "Ingenieria de aplicaciones web" from UNS;https://github.com/matichewer/IoT-Impact-nodejs;;assets/IoT-Impact-nodejs-preview.png
-Portfolio;This website to show my university and personal projects;https://github.com/matichewer/portfolio;https://portfolio.chewer.net/;assets/portfolio-preview.png
+PDF Password Remover;La mejor herramienta;https://github.com/matichewer/PDF-Password-Remover;;
+Burger Planet - API;An alternative API for a burger shop made with NodeJS for the project of "Ingenieria de aplicaciones web" from UNS;https://github.com/matichewer/IoT-Impact-nodejs;;
+Portfolio;This website to show my university and personal projects;https://github.com/matichewer/portfolio;https://portfolio.chewer.net/;
 Flick Color;A video game for the project of the 'Lógica para Ciencias de la Computacion' from UNS. The backend was made in Prolog, and frontend in React.;https://github.com/matichewer/flick-color;https://flickcolor.chewer.net/;assets/flick-color.png
-Udemy Python Course;A repository with all the practice and projects from the Python course I took on Udemy;https://github.com/matichewer/Udemy-Python-Course;;assets/udemy-python-course-preview.jpg
-Tateti;A Tic Tac Toe game made in C for the project of the 'Organizacion de computadoras' from UNS.;https://github.com/matichewer/Tateti-proyecto-orga;;assets/tateti.png
-Sigma Geek Challege;A challenge to find specfici numbers in Pi;https://github.com/matichewer/SigmaGeek_pi_challenge;;assets/SigmaGeek-pi-challenge.png
-Ports at UNS;Discover which ports are open from UNS;https://github.com/matichewer/test-all-ports-connection;;assets/test-all-ports-connection-preview.png
+Udemy Python Course;A repository with all the practice and projects from the Python course I took on Udemy;https://github.com/matichewer/Udemy-Python-Course;;
+Tateti;A Tic Tac Toe game made in C for the project of the 'Organizacion de computadoras' from UNS.;https://github.com/matichewer/Tateti-proyecto-orga;;
+Sigma Geek Challege;A challenge to find specfici numbers in Pi;https://github.com/matichewer/SigmaGeek_pi_challenge;;
+Ports at UNS;Discover which ports are open from UNS;https://github.com/matichewer/test-all-ports-connection;;
 Github Actions Course;A course from EATI;https://github.com/matichewer/eati2023-ci-cd-first-steps;;assets/eati2023-ci-cd-first-steps.png
+Host my own server;I use my raspi to deploy my projects;;;

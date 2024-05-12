@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -7,7 +7,12 @@
     height: fit-content;
   }
   #projects-container {
-    column-count: 2;
+    column-count: 3;
+    /* background-color: rgb(0, 255, 21); */
+  }
+  #projects{
+    margin-left: 3rem; 
+    margin-right: 3rem;
   }
 }
 
@@ -25,6 +30,14 @@
     width: 320px;
     height: 320px;
     margin: 4rem auto 4rem;
+  }
+  #projects-container {    
+    column-count: 2;
+    /* background-color: rgb(255, 238, 0); */
+  }
+  #projects{
+    margin-left: 2rem; 
+    margin-right: 2rem;
   }
 }
 
@@ -56,6 +69,7 @@
 
   #projects-container {
     column-count: 1;
+    /* background-color: rgb(255, 0, 0); */
   }
 }
 
@@ -92,12 +106,18 @@
   .title {
     font-size: 2rem;
   }
-  
+  #projects{
+    margin-left: 2rem; 
+    margin-right: 2rem;
+  }
+
   #projects-container {
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); */
+    column-count: 1;
+    /* background-color: blue; */
   }
   
   .project-card {
-    margin-bottom: 3px; /* Espacio entre filas */
+    margin-bottom: 1rem; /* Espacio entre filas */
   }
 }

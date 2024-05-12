@@ -155,6 +155,8 @@ section {
   position: relative;
   min-height: 100vh; 
   margin-top: 120px;
+  margin-left: 5rem; 
+  margin-right: 5rem;
 }
 
 #projects-container {
@@ -171,21 +173,19 @@ section {
   justify-items: center;  
   align-items: center; */
 
- column-count: 3; /* Adjust the number of columns as needed */
- column-gap: 1.5rem; /* Adjust the gap between columns */
- padding: 0rem; /* Add some padding around the container */
+ column-count: 4; /* Adjust the number of columns as needed */
+ column-gap: 0rem; /* Adjust the gap between columns */
+ padding: 0em; /* Add some padding around the container */
 }
 
 .project-card {
   background: white;
   border-radius: 2rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Sombra */
-  border: 1px solid rgba(0, 0, 0, 0.1); /* Borde más suave */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); /* Sombra */
+  border: 0px solid rgba(0, 0, 0, 0.1); /* Borde más suave */
   text-align: center;
   max-width: 600px; 
- /* max-height: 600px; */
-  border-color: rgb(68, 68, 68);
-  background: rgb(250, 250, 250);
+  /* background: rgb(250, 250, 250); */
   display: flex;
   flex-direction: column;
   flex: 1 0 400px;
@@ -193,7 +193,7 @@ section {
   justify-items: center;  
   align-items: center; 
 
-  width: 100%; /* Make the cards take full width of the column */
+  width: 90%; /* Make the cards take full width of the column */
   display: inline-block;
   margin-bottom: 1rem; /* Add some space between cards */
   box-sizing: border-box; /* Ensure padding and border are included in the width */
@@ -203,6 +203,19 @@ section {
   page-break-inside: avoid;
 } 
 
+.project-card::before {
+  content: attr(data-number); /* Mostrar el número de tarjeta como contenido antes de cada tarjeta */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Establecer un fondo semitransparente para el número */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+
 img-container {
   height: 100%; 
 }
@@ -211,8 +224,8 @@ img-container {
   /*border-radius: 2rem; */
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Reducir el ancho de las imágenes */
+  height: auto; /* Hacer que la altura de las imágenes se ajuste automáticamente */
 }
 
 .myimage {
@@ -228,6 +241,7 @@ img-container {
 .card-title {
   margin: 1rem;
   color: black;
+  font-size: 2rem; /* Ajustar el tamaño del título */
 }
 
 .card-description {
