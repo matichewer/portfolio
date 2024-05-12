@@ -14,11 +14,15 @@
     margin-left: 3rem; 
     margin-right: 3rem;
   }
+  .arrow {
+    top: 93%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   #profile {
     display: block;
+    margin-top: 1.5rem;
   }
   section {
     height: fit-content;
@@ -27,9 +31,9 @@
     margin: 0 5%;
   }
   .section__pic-container {
-    width: 320px;
-    height: 320px;
-    margin: 4rem auto 4rem;
+    width: 360px;
+    height: 360px;
+    margin: 2rem auto 3rem;
   }
   #projects-container {    
     column-count: 2;
@@ -39,15 +43,29 @@
     margin-left: 2rem; 
     margin-right: 2rem;
   }
+  .arrow {
+    top: 93%;
+  }
+  #socials-container {
+    display: block;
+    margin-top: 2rem;
+  }
+  .email {
+    margin-top: 1rem;
+  }
+  .icon {
+    height: 2rem;
+  }
 }
 
 
 @media screen and (max-width: 700px) {
   #profile {
     display: block;
+    margin-top: 2rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   .section__text__p2 {
     font-size: 1.3rem;
@@ -59,8 +77,8 @@
     margin: 0 5%;
   }
   .section__pic-container {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     margin: 2rem auto 4rem;
   }
   .project-card {
@@ -71,12 +89,34 @@
     column-count: 1;
     /* background-color: rgb(255, 0, 0); */
   }
+  #socials-container {
+    display: block;
+    margin-top: 3rem;
+  }
+  .email {
+    margin-top: 1rem;
+  }
+  .icon {
+    height: 2rem;
+  }
+  .arrow {
+    top: 94%;
+  }
+  .arrow span {
+    width: 1.6vw; /* Ajusta el ancho de la flechita */
+    height: 1.6vw; /* Ajusta la altura de la flechita */
+    transform: rotate(45deg) translateY(20px) translateX(5px); /* Ajusta la posición de la flechita */
+    margin: -8px; /* Ajusta el margen */
+  }
 }
 
 @media screen and (max-width: 600px) {
   #profile {
-    height: 83vh;
+    height: 80vh;
     margin-bottom: 0;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 3rem;
   }
   .btn-container {
     flex-wrap: wrap;
@@ -87,6 +127,7 @@
     width: 7rem;
     font-weight: 400;
     font-size: 0.8rem;
+    /* background-color: blue;  */
   }
   p,
   li a {
@@ -97,11 +138,12 @@
   }
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 70vw;
     justify-content: center;
+    min-height: 30vh;
   }
   .section__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
   .title {
     font-size: 2rem;
@@ -119,5 +161,24 @@
   
   .project-card {
     margin-bottom: 1rem; /* Espacio entre filas */
+  }
+  #socials-container {
+    display: block;
+    margin-top: 5rem;
+  }
+  .email {
+    margin-top: 1rem;
+  }
+  .icon {
+    height: 2.3rem;
+  }
+  .arrow {
+    top: 95%;
+  }
+  .arrow span {
+    width: 1.6vw; /* Ajusta el ancho de la flechita */
+    height: 1.6vw; /* Ajusta la altura de la flechita */
+    transform: rotate(45deg) translateY(20px) translateX(5px); /* Ajusta la posición de la flechita */
+    margin: -8px; /* Ajusta el margen */
   }
 }

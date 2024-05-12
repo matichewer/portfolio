@@ -72,14 +72,14 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 6rem;
   height: 80vh;
 }
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 420px;
+  width: 420px;
   margin: auto 0;
 }
 
@@ -97,7 +97,7 @@ section {
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -109,8 +109,8 @@ section {
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  margin-top: 3rem;
+  gap: 1.2rem;
 }
 
 /* ICONS */
@@ -266,7 +266,7 @@ footer {
   bottom: 0; /* Colocar el footer en la parte inferior de la ventana */
   width: 100%; /* Asegurar que el footer ocupe todo el ancho de la ventana */
   color: rgb(255, 255, 255);
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(54, 54, 54);
   text-align: center;
 }
 
