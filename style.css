@@ -266,7 +266,7 @@ footer {
   bottom: 0; /* Colocar el footer en la parte inferior de la ventana */
   width: 100%; /* Asegurar que el footer ocupe todo el ancho de la ventana */
   color: rgb(255, 255, 255);
-  background-color: rgb(109, 109, 109);
+  background-color: rgb(70, 70, 70);
   text-align: center;
 }
 
