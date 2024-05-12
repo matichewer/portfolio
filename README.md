@@ -1,4 +1,4 @@
-# Matias Schwerdt's Portfolio
+# My Portfolio
 
 Welcome to my portfolio repository! This portfolio is a web-based showcase of my projects, ranging from personal endeavors to university assignments. 
 
