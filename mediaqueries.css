@@ -110,7 +110,9 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 500px) {
+
   #profile {
     height: 80vh;
     margin-bottom: 0;
@@ -181,4 +183,5 @@
     transform: rotate(45deg) translateY(20px) translateX(5px); /* Ajusta la posición de la flechita */
     margin: -8px; /* Ajusta el margen */
   }
+
 }
