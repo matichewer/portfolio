@@ -80,6 +80,8 @@
   }
   .btn-container {
     flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem;
   }
   .btn{
     width: 7rem;
@@ -105,8 +107,8 @@
     font-size: 2rem;
   }
   #projects{
-    margin-left: 2rem; 
-    margin-right: 2rem;
+    margin-left: 0.7rem; 
+    margin-right: 0.7rem;
   }
 
   #projects-container {
