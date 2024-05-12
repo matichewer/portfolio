@@ -81,6 +81,11 @@
   .btn-container {
     flex-wrap: wrap;
   }
+  .btn{
+    width: 7rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
   p,
   li a {
     font-size: 1rem;
