@@ -74,16 +74,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  footer {
-    height: 40vh;
-  }
   #profile {
     height: 83vh;
     margin-bottom: 0;
-  }
-  footer {
-    height: fit-content;
-    margin-bottom: 2rem;
   }
   .btn-container {
     flex-wrap: wrap;

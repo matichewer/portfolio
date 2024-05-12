@@ -157,6 +157,7 @@ section {
   margin-top: 20vh;
   margin-left: 5rem; 
   margin-right: 5rem;
+  height: fit-content;
 }
 
 #projects-container {
@@ -252,17 +253,22 @@ img-container {
 
 
 /* FOOTER SECTION */
-
-footer {  
-  margin: 0 1rem;
-  position: fixed;
-  margin-top: auto;
-  flex-shrink: 0;
-  color: rgb(255, 255, 255);
-  background-color: rgb(63, 63, 63);
-  text-align: center;
+.content {
+  width: 100%;
+  max-width: 100%; /* Esto es opcional si deseas limitar el ancho máximo */
+  /* Resto del CSS */
 }
 
+footer {  
+  margin: 0; /* Eliminar el margen para que el footer ocupe todo el ancho */
+  margin-top: 1rem;
+  position: relative; /* Cambiar la posición a relativa */
+  bottom: 0; /* Colocar el footer en la parte inferior de la ventana */
+  width: 100%; /* Asegurar que el footer ocupe todo el ancho de la ventana */
+  color: rgb(255, 255, 255);
+  background-color: rgb(109, 109, 109);
+  text-align: center;
+}
 
 
 
