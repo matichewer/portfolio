@@ -112,22 +112,22 @@
 
 
 @media screen and (max-width: 500px) {
-
   #profile {
-    height: 80vh;
-    margin-bottom: 0;
+    height: auto;
+    margin-bottom: 0rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
+    padding: 0rem;
   }
   .btn-container {
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 1rem;
+    gap: 1rem;
+    margin: 0rem;
   }
   .btn{
     width: 7rem;
-    font-weight: 400;
+    font-weight: 420;
     font-size: 0.8rem;
     /* background-color: blue;  */
   }
@@ -140,15 +140,16 @@
   }
   .section__pic-container {
     width: auto;
-    height: 70vw;
+    height: 60vw;
     justify-content: center;
     min-height: 30vh;
+    margin-bottom: 2rem;
   }
   .section__text__p2 {
     font-size: 1.15rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   #projects{
     margin-left: 0.7rem; 
@@ -166,13 +167,15 @@
   }
   #socials-container {
     display: block;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   .email {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
   }
   .icon {
-    height: 2.3rem;
+    height: 1.8rem;
+    padding: 0.5rem;
   }
   .arrow {
     top: 95%;
@@ -183,5 +186,4 @@
     transform: rotate(45deg) translateY(20px) translateX(5px); /* Ajusta la posición de la flechita */
     margin: -8px; /* Ajusta el margen */
   }
-
 }
