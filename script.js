@@ -37,11 +37,9 @@ function parseCSV(csv) {
 
 
 function createProjectElement(project) {
-  // Crear el contenedor principal para cada proyecto
   const cardContainer = document.createElement("div");
   cardContainer.className = "project-card";
 
-  // Crear el contenedor de la imagen
   if (project.Image) {
     const imgContainer = document.createElement("div");
     const img = document.createElement("img");
@@ -56,40 +54,46 @@ function createProjectElement(project) {
   cardRest.className = "card-rest"; 
   cardContainer.appendChild(cardRest);
 
-  // Crear el título del proyecto
   const title = document.createElement("h2");
   title.className = "card-title";
   title.textContent = project.Title;
   cardRest.appendChild(title);
 
-  // Crear la descripción del proyecto con la clase de margen
   const description = document.createElement("p");
   description.textContent = project.Description;
   description.className = "card-description"; 
   cardRest.appendChild(description);
 
-  // Crear el contenedor de botones
   const btnContainer = document.createElement("div");
   btnContainer.className = "btn-container";
   cardRest.appendChild(btnContainer);
 
-  // Crear el botón de Github
   if (project.GithubLink) {
-    const githubBtn = document.createElement("button");
+    const githubBtn = document.createElement("a");
     githubBtn.className = "btn";
-    githubBtn.textContent = "Github";
-    githubBtn.onclick = () => window.open(project.GithubLink, '_blank');
-    btnContainer.appendChild(githubBtn);  
+    githubBtn.href = project.GithubLink;
+    githubBtn.target = "_blank";
+    githubBtn.rel = "noopener noreferrer";
+    githubBtn.innerHTML = '<i class="fab fa-github icon-spacing"></i> GitHub';
+    btnContainer.appendChild(githubBtn);    
   }
 
-  // Crear el botón de Live Demo solo si el proyecto tiene un enlace de demostración
   if (project.LiveDemoLink) {
-    const liveDemoBtn = document.createElement("button");
+    const liveDemoBtn = document.createElement("a");
     liveDemoBtn.className = "btn";
-    liveDemoBtn.textContent = "Live Demo";
-    liveDemoBtn.onclick = () => window.open(project.LiveDemoLink, '_blank');
-    btnContainer.appendChild(liveDemoBtn);
-  }  
+    liveDemoBtn.href = project.LiveDemoLink;
+    liveDemoBtn.target = "_blank"; // Abre en nueva pestaña
+    liveDemoBtn.rel = "noopener noreferrer"; // Seguridad
 
-  return cardContainer; // Devolver el contenedor principal del proyecto
+    // Opción 1: Icono de monitor
+    // liveDemoBtn.innerHTML = '<i class="fas fa-desktop icon-spacing"></i> Live Demo';
+
+    // Opción 2: Icono de "play"
+    liveDemoBtn.innerHTML = '<i class="fas fa-play icon-spacing"></i> Live Demo';
+
+    btnContainer.appendChild(liveDemoBtn);
+  } 
+
+  return cardContainer;
 }
+

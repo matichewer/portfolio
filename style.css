@@ -40,9 +40,27 @@ a {
 
 a:hover {
   color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+}
+
+a.btn {
+  display: flex; /* Cambia de inline-block a flex */
+  align-items: center; /* Alinea los elementos hijos verticalmente */
+  justify-content: center; /* Alinea los elementos hijos horizontalmente */  
+  padding: 0.65rem;
+  width: 8rem;
+  font-size: 1rem; 
+  border-radius: 1.5rem;
+  cursor: pointer;
+  border: 0.13rem solid rgb(83, 83, 83); 
+  background: rgb(240, 240, 240);
+  color: rgb(32, 32, 32); /* Color del texto */
+  text-align: center; /* Centrar texto */
+  white-space: nowrap;
+}
+
+a.btn:hover {
+  background: rgb(83, 83, 83);
+  color: white;
 }
 
 .logo {
@@ -180,7 +198,7 @@ section {
 }
 
 .project-card {
-  background: white;
+  background: rgb(245, 245, 245);
   border-radius: 2rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); /* Sombra */
   border: 0px solid rgba(0, 0, 0, 0.1); /* Borde más suave */
@@ -314,4 +332,8 @@ footer {
       opacity: 0;
       transform: rotate(45deg) translate(20px, 20px);
   }
+}
+
+.icon-spacing {
+  margin-right: 5px; /* Ajusta este valor según sea necesario */
 }
