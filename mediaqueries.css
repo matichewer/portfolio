@@ -159,11 +159,12 @@
   #projects-container {
     /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); */
     column-count: 1;
-    /* background-color: blue; */
+   /* background-color: blue; */
   }
   
   .project-card {
     margin-bottom: 1rem; /* Espacio entre filas */
+    padding: 1rem;
   }
   #socials-container {
     display: block;
@@ -185,5 +186,8 @@
     height: 1.6vw; /* Ajusta la altura de la flechita */
     transform: rotate(45deg) translateY(20px) translateX(5px); /* Ajusta la posición de la flechita */
     margin: -8px; /* Ajusta el margen */
+  }
+  .card-title {
+    font-size: 1.7rem; /* Ajustar el tamaño del título */
   }
 }
