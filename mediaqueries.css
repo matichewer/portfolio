@@ -124,6 +124,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin: 0rem;
+    margin-top: 1.5rem;
   }
   .btn{
     width: 7rem;
@@ -196,5 +197,6 @@
   }
   .card-description {
     font-size: 0.9rem;
+    margin: 1rem;
   }
 }
