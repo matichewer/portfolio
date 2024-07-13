@@ -165,7 +165,7 @@
   
   .project-card {
     margin-bottom: 1rem; /* Espacio entre filas */
-    padding: 1rem;
+    padding-bottom: 1rem;
   }
   #socials-container {
     display: block;
