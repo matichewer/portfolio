@@ -188,6 +188,13 @@
     margin: -8px; /* Ajusta el margen */
   }
   .card-title {
-    font-size: 1.7rem; /* Ajustar el tamaño del título */
+    font-size: 1.5rem; /* Ajustar el tamaño del título */
+  }
+  a.btn {
+    font-size: 0.9rem;
+    width: 7rem;
+  }
+  .card-description {
+    font-size: 0.9rem;
   }
 }
