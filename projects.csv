@@ -13,3 +13,5 @@ Discover Blocked Ports;Bash scripts to identify blocked network ports on my univ
 GitHub Actions Course;A course from EATI;https://github.com/matichewer/eati2023-ci-cd-first-steps;;assets/eati2023-ci-cd-first-steps.png
 Host my own server;I use my Raspberry Pi to deploy my projects, utilizing technologies like Nginx, Docker, and more;;;
 Song Info;An Android app for the project of 'Arquitectura y diseño de sistemas' from UNS;https://github.com/matichewer/AyDS-SongInfo;;
+Linux Backup;Bash scripts to automate the process of backing up files and directories on Linux. The scripts compress, encrypt, and upload the backups to Mega;https://github.com/matichewer/linux-backup;;
+Github Preview;Get title, description and image preview from a github repositorie;https://github.com/matichewer/github-preview;;
