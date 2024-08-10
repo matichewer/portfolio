@@ -4,14 +4,14 @@ Castle Defense;A Tower Defense video game written in Java, developed as a projec
 Burger Planet - Backend;An admin panel and API for a burger shop made with Laravel for the project of 'Ingenieria de aplicaciones web' from UNS;https://github.com/matichewer/IoT-Impact-laravel/;;assets/IoT-Impact-laravel.png
 Burger Planet - API;An alternative API for a burger shop made with NodeJS for the project of 'Ingenieria de aplicaciones web' from UNS;https://github.com/matichewer/IoT-Impact-nodejs;;
 PDF Password Remover;Massively remove passwords from PDF files;https://github.com/matichewer/PDF-Password-Remover;;assets/PDF-Password-Remover.png
-Portfolio;This website to show my university and personal projects;https://github.com/matichewer/portfolio;https://portfolio.chewer.net/;
+Portfolio;This website! It shows my university and personal projects;https://github.com/matichewer/portfolio;;
 Flick Color;A video game for the project of the 'Lógica para Ciencias de la Computacion' from UNS. The backend was made in Prolog, and frontend in React;https://github.com/matichewer/flick-color;https://flickcolor.chewer.net/;assets/flick-color.png
 Udemy Python Course;A repository with all the practice and projects from the Python course I took on Udemy;https://github.com/matichewer/Udemy-Python-Course;;
 Tic Tac Toe;A Tic Tac Toe game made in C for the project of the 'Organizacion de computadoras' from UNS;https://github.com/matichewer/Tateti-proyecto-orga;;
-Sigma Geek Challege;A challenge to find specfici numbers in Pi;https://github.com/matichewer/SigmaGeek_pi_challenge;;
+Sigma Geek Challege;A challenge from Sigma Geek, that we need to find large palindromic prime numbers in the decimal expansion of π (pi);https://github.com/matichewer/SigmaGeek_pi_challenge;;
 Discover Blocked Ports;Bash scripts to identify blocked network ports on my university network;https://github.com/matichewer/DiscoverBlockedPorts;;
-GitHub Actions Course;A course from EATI;https://github.com/matichewer/eati2023-ci-cd-first-steps;;assets/eati2023-ci-cd-first-steps.png
-Host my own server;I use my Raspberry Pi to deploy my projects, utilizing technologies like Nginx, Docker, and more;;;
+GitHub Actions Course;A course from UNS to learn about of CI/CD using GitHub Actions. We did custom workflows, automating testing and deployment processes, and developing custom GitHub Actions;https://github.com/matichewer/eati2023-ci-cd-first-steps;;assets/eati2023-ci-cd-first-steps.png
+Host my own server;I use my Raspberry Pi to deploy my projects, utilizing technologies like Nginx, Docker, Bash, webhooks and more;;;
 Song Info;An Android app for the project of 'Arquitectura y diseño de sistemas' from UNS;https://github.com/matichewer/AyDS-SongInfo;;
 Linux Backup;Bash scripts to automate the process of backing up files and directories on Linux. The scripts compress, encrypt, and upload the backups to Mega;https://github.com/matichewer/linux-backup;;
-Github Preview;Get title, description and image preview from a github repositorie;https://github.com/matichewer/github-preview;;
+Github Preview;Get title, description and image preview from a Github repositorie;https://github.com/matichewer/github-preview;https://github-preview.onrender.com/;assets/github-preview.png
