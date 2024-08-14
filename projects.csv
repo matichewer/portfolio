@@ -11,7 +11,7 @@ Tic Tac Toe;A Tic Tac Toe game made in C for the project of the 'Organizacion de
 Sigma Geek Challege;A challenge from Sigma Geek, in which we had to find large palindromic prime numbers in the decimal expansion of π (pi).;https://github.com/matichewer/SigmaGeek_pi_challenge;;
 Discover Blocked Ports;Bash scripts to identify blocked network ports in my university network.;https://github.com/matichewer/DiscoverBlockedPorts;;
 GitHub Actions Course;A course from UNS to learn about CI/CD using GitHub Actions. We did custom workflows, automating testing and deployment processes, and developing custom GitHub Actions.;https://github.com/matichewer/eati2023-ci-cd-first-steps;;assets/eati2023-ci-cd-first-steps.png
-Host my own server;I use my Raspberry Pi to deploy my projects, utilizing technologies like Nginx, Docker, Bash, webhooks and more.;;;
+Host my own server;I use my Raspberry Pi to deploy my projects, utilizing technologies like Nginx, Docker, Bash, webhooks and more.;;;assets/raspi.png
 Song Info;An Android app for the project of 'Arquitectura y diseño de sistemas' at UNS.;https://github.com/matichewer/AyDS-SongInfo;;assets/song-info.png
 Linux Backup;Bash scripts to automate the process of backing up files and directories on Linux. The scripts compress, encrypt, and upload the backups to Mega.;https://github.com/matichewer/linux-backup;;
 Github Preview;Get title, description and image preview from a Github repositorie.;https://github.com/matichewer/github-preview;https://github-preview.onrender.com/;assets/github-preview.png
