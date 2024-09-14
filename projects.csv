@@ -1,8 +1,10 @@
 Title;Description;GithubLink;LiveDemoLink;Image
 Burger Planet - Frontend;A burger shop made in React for the project of 'Ingenieria de aplicaciones web' from UNS.;https://github.com/matichewer/IoT-Impact-js/;https://iot-impact-js.vercel.app/;assets/IoT-Impact-js-2.png
-Castle Defense;A Tower Defense video game written in Java, developed as a project for the 'Tecnología de programación' subject at Universidad Nacional del Sur (UNS).;https://github.com/matichewer/Castle-Defense;;assets/Castle-Defense.png
 Burger Planet - Backend;An admin panel and API for a burger shop made with Laravel for the project of 'Ingenieria de aplicaciones web' from UNS.;https://github.com/matichewer/IoT-Impact-laravel/;;assets/IoT-Impact-laravel.png
 Burger Planet - API;An alternative API for a burger shop made with NodeJS for the project of 'Ingenieria de aplicaciones web' from UNS.;https://github.com/matichewer/IoT-Impact-nodejs;;
+Castle Defense;A Tower Defense video game written in Java, developed as a project for the 'Tecnología de programación' subject at Universidad Nacional del Sur (UNS).;https://github.com/matichewer/Castle-Defense;;assets/Castle-Defense.png
+Linux Backup;Bash scripts to automate the process of backing up files and directories on Linux. The scripts compress, encrypt, and upload the backups to Mega.;https://github.com/matichewer/linux-backup;;
+Host my own server;I use my Raspberry Pi to deploy my projects, utilizing technologies like Nginx, Docker, Bash, webhooks and more.;;;assets/raspi.png
 PDF Password Remover;Massively remove passwords from PDF files.;https://github.com/matichewer/PDF-Password-Remover;;assets/PDF-Password-Remover.png
 Portfolio;This website! It shows my university and personal projects.;https://github.com/matichewer/portfolio;;
 Flick Color;A video game for the project of the 'Lógica para Ciencias de la Computación' at UNS. The backend was made in Prolog, and frontend in React.;https://github.com/matichewer/flick-color;https://flickcolor.chewer.net/;assets/flick-color.png
@@ -11,9 +13,7 @@ Tic Tac Toe;A Tic Tac Toe game made in C for the project of the 'Organizacion de
 Sigma Geek Challege;A challenge from Sigma Geek, in which we had to find large palindromic prime numbers in the decimal expansion of π (pi).;https://github.com/matichewer/SigmaGeek_pi_challenge;;
 Discover Blocked Ports;Bash scripts to identify blocked network ports in my university network.;https://github.com/matichewer/DiscoverBlockedPorts;;
 GitHub Actions Course;A course from UNS to learn about CI/CD using GitHub Actions. We did custom workflows, automating testing and deployment processes, and developing custom GitHub Actions.;https://github.com/matichewer/eati2023-ci-cd-first-steps;;assets/eati2023-ci-cd-first-steps.png
-Host my own server;I use my Raspberry Pi to deploy my projects, utilizing technologies like Nginx, Docker, Bash, webhooks and more.;;;assets/raspi.png
 Song Info;An Android app for the project of 'Arquitectura y diseño de sistemas' at UNS.;https://github.com/matichewer/AyDS-SongInfo;;assets/song-info.png
-Linux Backup;Bash scripts to automate the process of backing up files and directories on Linux. The scripts compress, encrypt, and upload the backups to Mega.;https://github.com/matichewer/linux-backup;;
 Github Preview;Get title, description and image preview from a Github repositorie.;https://github.com/matichewer/github-preview;https://github-preview.onrender.com/;assets/github-preview.png
 Polar Cartesian Converter;A web page created for 'Física 1' subject, using Python and Streamlit, which converts between Cartesian and Polar coordinates in both directions.;https://github.com/matichewer/polar-cartesian-converter;https://fisica.chewer.net/;assets/conversor.png
 Tracking with Python;Tracking balls with Python, developed as a project for the 'Física 1' subject at Universidad Nacional del Sur (UNS).;https://github.com/matichewer/proyecto-fisica;;assets/tracking-ball.png
