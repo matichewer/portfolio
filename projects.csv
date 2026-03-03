@@ -1,4 +1,5 @@
 Title;Description;GithubLink;LiveDemoLink;Image
+UNS Calendar;A web app to browse and export the UNS academic calendar to your favorite Calendar app as an .is file;https://github.com/matichewer/uns-calendar-sync;https://calendario-uns.chewer.net/;assets/uns-calendar.png
 Burger Planet - Frontend;A burger shop made in React for the project of 'Ingenieria de aplicaciones web' from UNS.;https://github.com/matichewer/IoT-Impact-js/;;assets/IoT-Impact-js-2.png
 Burger Planet - Backend;An admin panel and API for a burger shop made with Laravel for the project of 'Ingenieria de aplicaciones web' from UNS.;https://github.com/matichewer/IoT-Impact-laravel/;;assets/IoT-Impact-laravel.png
 Burger Planet - API;An alternative API for a burger shop made with NodeJS for the project of 'Ingenieria de aplicaciones web' from UNS.;https://github.com/matichewer/IoT-Impact-nodejs;;
