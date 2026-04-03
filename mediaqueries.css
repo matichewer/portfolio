@@ -115,12 +115,17 @@
 
 @media screen and (max-width: 500px) {
   #profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
     height: auto;
     margin-bottom: 0rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    margin-top: 4rem;
-    padding: 0rem;
+    margin-top: 0rem;
+    padding: 6rem 0 0 0;
   }
   .btn-container {
     flex-wrap: wrap;
@@ -145,8 +150,8 @@
     width: auto;
     height: 60vw;
     justify-content: center;
-    min-height: 30vh;
-    margin-bottom: 2rem;
+    margin-top: 0;
+    margin-bottom: 5rem;
   }
   .section__text__p2 {
     font-size: 1.15rem;
