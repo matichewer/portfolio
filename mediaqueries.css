@@ -23,6 +23,8 @@
   #profile {
     display: block;
     margin-top: 1.5rem;
+    min-height: 80vh; /* fallback */
+    min-height: 80svh; /* modern mobile: excludes browser chrome from height calculation */
   }
   section {
     height: fit-content;
