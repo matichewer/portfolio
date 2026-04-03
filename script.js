@@ -86,10 +86,10 @@ function createProjectElement(project) {
     liveDemoBtn.rel = "noopener noreferrer"; // Seguridad
 
     // Opción 1: Icono de monitor
-    // liveDemoBtn.innerHTML = '<i class="fas fa-desktop icon-spacing"></i> Live Demo';
+    // liveDemoBtn.innerHTML = '<i class="fas fa-desktop icon-spacing"></i> Try it';
 
     // Opción 2: Icono de "play"
-    liveDemoBtn.innerHTML = '<i class="fas fa-play icon-spacing"></i> Live Demo';
+    liveDemoBtn.innerHTML = '<i class="fas fa-play icon-spacing"></i> Try it';
 
     btnContainer.appendChild(liveDemoBtn);
   } 
