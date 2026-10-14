@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matias's Portfolio</title>
+  <meta name="description" content="Matias David Schwerdt, software engineering student at Universidad Nacional del Sur (UNS). Projects built with React, TypeScript, Java, Python, Docker and more." />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
@@ -32,9 +35,6 @@
     
     <!-- Tipo de contenido -->
     <meta property="og:type" content="website" />
-    
-    <!-- Título de la página (opcional, si no quieres cambiar el título del navegador) -->
-    <meta name="title" content="Matias David Schwerdt | Software Engineering Portfolio" />
 
 
 </head>
@@ -75,16 +75,16 @@
 
 
     <div id="scroll-arrow-container">
-      <div class="arrow" onclick="scrollToProjects()">
+      <a class="arrow" href="#projects" aria-label="Scroll to projects">
         <span></span>
         <span></span>
-      </div>
+      </a>
     </div>
 
 
 
     <section id="projects">
-      <h1 class="title">Projects</h1>
+      <h2 class="title">Projects</h2>
       <div id="projects-container">
         <!-- Los proyectos se cargarán aquí dinámicamente -->
       </div>

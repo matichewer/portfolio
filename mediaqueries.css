@@ -207,3 +207,14 @@
     margin: 1rem;
   }
 }
+
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .arrow span {
+    animation: none;
+    transform: rotate(45deg); /* middle of the animation, where it's fully visible */
+  }
+}
