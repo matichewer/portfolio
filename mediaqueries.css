@@ -7,7 +7,7 @@
     height: fit-content;
   }
   #projects-container {
-    column-count: 3;
+    --columns: 3;
     /* background-color: rgb(0, 255, 21); */
   }
   #projects{
@@ -38,7 +38,7 @@
     margin: 2rem auto 3rem;
   }
   #projects-container {    
-    column-count: 2;
+    --columns: 2;
     /* background-color: rgb(255, 238, 0); */
   }
   #projects{
@@ -88,7 +88,7 @@
   }
 
   #projects-container {
-    column-count: 1;
+    --columns: 1;
     /* background-color: rgb(255, 0, 0); */
   }
   #socials-container {
@@ -166,7 +166,7 @@
 
   #projects-container {
     /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); */
-    column-count: 1;
+    --columns: 1;
    /* background-color: blue; */
   }
   
