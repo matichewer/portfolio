@@ -96,10 +96,24 @@ function createProjectElement(project) {
   title.textContent = project.Title;
   cardRest.appendChild(title);
 
+  if (project.Tags) {
+    const tagList = document.createElement("ul");
+    tagList.className = "card-tags";
+    tagList.setAttribute("aria-label", "Technologies");
+    project.Tags.split(",").forEach((tag) => {
+      const item = document.createElement("li");
+      item.textContent = tag.trim();
+      tagList.appendChild(item);
+    });
+    cardRest.appendChild(tagList);
+  }
+
   const description = document.createElement("p");
   description.textContent = project.Description;
   description.className = "card-description"; 
   cardRest.appendChild(description);
+
+  if (!project.GithubLink && !project.LiveDemoLink) return cardContainer;
 
   const btnContainer = document.createElement("div");
   btnContainer.className = "btn-container";
