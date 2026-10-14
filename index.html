@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matias's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
   <!-- Cloudflare Web Analytics -->
@@ -43,7 +44,7 @@
 
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic-circle.png?v=timestamp" alt="Matias profile picture" />
+        <img src="./assets/profile-pic-circle.webp" alt="Matias profile picture" fetchpriority="high" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello! I'm</p>
@@ -58,31 +59,19 @@
         </div>
       -->
         <div id="socials-container">
-          <a href="https://www.linkedin.com/in/matiasschwerdt/" target="_blank">
-            <img src="./assets/icons/linkedin.png" alt="My LinkedIn profile" class="icon" />
+          <a href="https://www.linkedin.com/in/matiasschwerdt/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/icons/linkedin.webp" alt="My LinkedIn profile" class="icon" />
           </a>
-          <a href="https://github.com/matichewer" target="_blank">
-            <img src="./assets/icons/github.png" alt="My Github profile" class="icon" />
+          <a href="https://github.com/matichewer" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/icons/github.webp" alt="My Github profile" class="icon" />
           </a>
           <a href="mailto:schwerdt.matias@gmail.com">
-            <img src="./assets/icons/email-2.png" alt="Email icon" class="icon" />
+            <img src="./assets/icons/email-2.webp" alt="Email icon" class="icon" />
           </a>
           <p class="email"> schwerdt.matias@gmail.com</p>
         </div>
       </div>
     </section>
-
-
-    <div id="social_preview"></div>
-    <script>
-      document.getElementById('social_preview').innerHTML = social_preview.small({
-        title: 'PDF Password Remover',
-        description: 'Una herramienta para remover contraseñas de archivos PDF.',
-        site: 'GitHub',
-        url: 'https://github.com/matichewer/PDF-Password-Remover',
-        img: 'assets/pdf-password-remover.png',
-      });
-    </script>
 
 
     <div id="scroll-arrow-container">
@@ -103,7 +92,7 @@
 
 
       <footer>
-        Build with &#10084;  by Matias David Schwerdt
+        Built with &#10084;  by Matias David Schwerdt
       </footer>
   
 
@@ -111,11 +100,6 @@
 
 
   <script src="script.js"></script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 
 
 </body>

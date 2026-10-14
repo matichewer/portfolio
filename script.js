@@ -1,17 +1,46 @@
+const GITHUB_ICON =
+  '<svg class="btn-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>';
+const PLAY_ICON =
+  '<svg class="btn-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2v12l10-6z"/></svg>';
+
+const projectCards = [];
+let renderedColumnCount = 0;
+
 window.addEventListener("DOMContentLoaded", () => {
   fetch("projects.csv")
     .then((response) => response.text())
     .then((data) => {
-      const projects = parseCSV(data);
-      const projectsContainer = document.getElementById("projects-container");
-
-      projects.forEach((project) => {
-        const projectElement = createProjectElement(project);
-        projectsContainer.appendChild(projectElement);
+      parseCSV(data).forEach((project) => {
+        projectCards.push(createProjectElement(project));
       });
+      layoutProjects();
+      window.addEventListener("resize", layoutProjects);
     })
     .catch((error) => console.error("Error fetching projects:", error));
 });
+
+
+// Masonry layout: each card goes into the shortest column, so the first row
+// follows the CSV order. The column count comes from --columns in the CSS.
+function layoutProjects() {
+  const container = document.getElementById("projects-container");
+  const columnCount =
+    parseInt(getComputedStyle(container).getPropertyValue("--columns"), 10) || 1;
+  if (columnCount === renderedColumnCount) return;
+  renderedColumnCount = columnCount;
+
+  const columns = Array.from({ length: columnCount }, () => {
+    const column = document.createElement("div");
+    column.className = "projects-column";
+    return column;
+  });
+  container.replaceChildren(...columns);
+
+  projectCards.forEach((card) => {
+    const shortest = columns.reduce((a, b) => (b.offsetHeight < a.offsetHeight ? b : a));
+    shortest.appendChild(card);
+  });
+}
 
 
 function scrollToProjects() {
@@ -23,16 +52,17 @@ function scrollToProjects() {
 function parseCSV(csv) {
   const rows = csv.split(/\r?\n/).map((row) => row.split(";"));
   const headers = rows[0];
-  return rows.slice(1).map((row) => {
-    const project = {};
-    if (row.length === headers.length) {
+  // Skip blank or malformed rows instead of rendering empty cards
+  return rows
+    .slice(1)
+    .filter((row) => row.length === headers.length)
+    .map((row) => {
+      const project = {};
       headers.forEach((header, index) => {
-        project[header.trim()] = row[index] ? row[index].trim() : "";
-        // Verifica si el elemento de la fila está definido antes de acceder a él
+        project[header.trim()] = row[index].trim();
       });
-    }
-    return project;
-  });
+      return project;
+    });
 }
 
 
@@ -46,6 +76,13 @@ function createProjectElement(project) {
     img.alt = project.Title;
     img.className = "card-img";
     img.src = project.Image;
+    img.loading = "lazy";
+    img.decoding = "async";
+    // Reserve the image's space before it loads (no layout shift)
+    if (project.ImageWidth && project.ImageHeight) {
+      img.width = project.ImageWidth;
+      img.height = project.ImageHeight;
+    }
     imgContainer.appendChild(img);
     cardContainer.appendChild(imgContainer);
   }
@@ -74,7 +111,7 @@ function createProjectElement(project) {
     githubBtn.href = project.GithubLink;
     githubBtn.target = "_blank";
     githubBtn.rel = "noopener noreferrer";
-    githubBtn.innerHTML = '<i class="fab fa-github icon-spacing"></i> GitHub';
+    githubBtn.innerHTML = `${GITHUB_ICON} GitHub`;
     btnContainer.appendChild(githubBtn);    
   }
 
@@ -84,12 +121,7 @@ function createProjectElement(project) {
     liveDemoBtn.href = project.LiveDemoLink;
     liveDemoBtn.target = "_blank"; // Abre en nueva pestaña
     liveDemoBtn.rel = "noopener noreferrer"; // Seguridad
-
-    // Opción 1: Icono de monitor
-    // liveDemoBtn.innerHTML = '<i class="fas fa-desktop icon-spacing"></i> Try it';
-
-    // Opción 2: Icono de "play"
-    liveDemoBtn.innerHTML = '<i class="fas fa-play icon-spacing"></i> Try it';
+    liveDemoBtn.innerHTML = `${PLAY_ICON} Try it`;
 
     btnContainer.appendChild(liveDemoBtn);
   } 
