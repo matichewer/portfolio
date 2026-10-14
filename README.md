@@ -11,7 +11,10 @@ You can access my portfolio website at https://portfolio.chewer.net. Feel free t
 - mediaqueries.css: CSS file for responsive design, ensuring compatibility across various devices and screen sizes.
 - script.js: JavaScript file handling interactive elements and dynamic behavior of the website.
 - assets: Directory containing images and other media assets used in the portfolio.
-- projects.csv: CSV file listing the projects featured in the portfolio, including details such as project name, description, and links.
+- projects.csv: CSV file (`;`-separated) listing the projects featured in the portfolio. Columns:
+  - `Title`, `Description`, `GithubLink`, `LiveDemoLink`
+  - `Tags`: comma-separated technologies, shown on each card.
+  - `Image`, `ImageWidth`, `ImageHeight`: screenshot path and its size in pixels (optional).
 - CNAME: Custom domain configuration file for hosting the portfolio on a custom domain.
 
 

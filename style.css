@@ -188,6 +188,7 @@ section {
   min-width: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .project-card {
@@ -200,6 +201,27 @@ section {
   margin: 1rem;
   box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
+
+/* Technology tags inside each card */
+
+.card-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0 1rem;
+}
+
+.card-tags li {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.15rem 0.65rem;
+  border-radius: 1rem;
+  background: rgb(225, 225, 225);
+  color: rgb(60, 60, 60);
+}
+
 
 .project-card::before {
   content: attr(data-number); /* Mostrar el número de tarjeta como contenido antes de cada tarjeta */
