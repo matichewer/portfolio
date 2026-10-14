@@ -43,6 +43,65 @@ function layoutProjects() {
 }
 
 
+// Mouse wheel on the profile section glides to Projects, and scrolling up from
+// Projects glides back to the top. Inside Projects the wheel scrolls normally.
+const GLIDE_DURATION = 900; // ms
+let gliding = false;
+
+window.addEventListener(
+  "wheel",
+  (event) => {
+    if (event.ctrlKey || Math.abs(event.deltaY) < Math.abs(event.deltaX)) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    if (gliding) {
+      event.preventDefault(); // ignore wheel/trackpad input until the glide ends
+      return;
+    }
+
+    const projectsTop = document.getElementById("projects").offsetTop;
+    if (event.deltaY > 0 && window.scrollY < projectsTop - 1) {
+      event.preventDefault();
+      glideTo(projectsTop);
+    } else if (event.deltaY < 0 && window.scrollY > 0 && window.scrollY + event.deltaY < projectsTop - 1) {
+      event.preventDefault();
+      glideTo(0);
+    }
+  },
+  { passive: false }
+);
+
+// The arrow uses the same glide (its href still works without JS)
+document.querySelector(".arrow").addEventListener("click", (event) => {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  event.preventDefault();
+  glideTo(document.getElementById("projects").offsetTop);
+});
+
+// Custom animation instead of behavior: "smooth", which is short and starts abruptly
+function glideTo(top) {
+  const start = window.scrollY;
+  const distance = top - start;
+  const startTime = performance.now();
+  gliding = true;
+
+  function step(now) {
+    const progress = Math.min((now - startTime) / GLIDE_DURATION, 1);
+    window.scrollTo({ top: start + distance * easeInOutCubic(progress), behavior: "instant" });
+    if (progress < 1) {
+      requestAnimationFrame(step);
+    } else {
+      gliding = false;
+    }
+  }
+  requestAnimationFrame(step);
+}
+
+function easeInOutCubic(t) {
+  return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+}
+
+
 function parseCSV(csv) {
   const rows = csv.split(/\r?\n/).map((row) => row.split(";"));
   const headers = rows[0];
