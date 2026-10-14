@@ -335,6 +335,23 @@ footer {
   }
 }
 
+/* The link box has no size (the spans use negative margins), so the focus
+   ring is drawn around the area where the animated chevrons are visible */
+.arrow:focus-visible {
+  outline: none;
+}
+
+.arrow:focus-visible::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: -1.25rem;
+  width: 4rem;
+  height: 4rem;
+  border: 0.15rem solid rgb(53, 53, 53);
+  border-radius: 1rem;
+}
+
 .btn-icon {
   width: 1em;
   height: 1em;

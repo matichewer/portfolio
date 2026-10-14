@@ -43,12 +43,6 @@ function layoutProjects() {
 }
 
 
-function scrollToProjects() {
-  const projectsSection = document.getElementById("projects");
-  projectsSection.scrollIntoView({ behavior: "smooth" });
-}
-
-
 function parseCSV(csv) {
   const rows = csv.split(/\r?\n/).map((row) => row.split(";"));
   const headers = rows[0];
@@ -91,7 +85,7 @@ function createProjectElement(project) {
   cardRest.className = "card-rest"; 
   cardContainer.appendChild(cardRest);
 
-  const title = document.createElement("h2");
+  const title = document.createElement("h3");
   title.className = "card-title";
   title.textContent = project.Title;
   cardRest.appendChild(title);
