@@ -7,7 +7,7 @@ Castle Defense;A Tower Defense video game written in Java, developed as a projec
 Linux Backup;Bash scripts to automate the process of backing up files and directories on Linux. The scripts compress, encrypt, and upload the backups to Mega.;Bash;https://github.com/matichewer/linux-backup;;;;
 Host my own server;I use my Raspberry Pi to deploy my projects, utilizing technologies like Nginx, Docker, Bash, webhooks and more.;Raspberry Pi, Docker, Nginx, Bash;;;assets/raspi.webp;1039;432
 PDF Password Remover;Massively remove passwords from PDF files.;Java;https://github.com/matichewer/PDF-Password-Remover;;assets/PDF-Password-Remover.webp;1200;508
-Portfolio;This website! It shows my university and personal projects.;HTML, CSS, JavaScript;https://github.com/matichewer/portfolio;;assets/portfolio.webp?v=3;1200;507
+Portfolio;This website! It shows my university and personal projects.;HTML, CSS, JavaScript;https://github.com/matichewer/portfolio;;assets/portfolio.webp?v=4;1200;578
 Flick Color;A video game for the project of the 'Lógica para Ciencias de la Computación' at UNS. The backend was made in Prolog, and frontend in React.;Prolog, React, Docker;https://github.com/matichewer/flick-color;;assets/flick-color.webp;1200;717
 Tic Tac Toe;A Tic Tac Toe game made in C for the project of the 'Organización de computadoras' from UNS.;C;https://github.com/matichewer/Tateti-proyecto-orga;;;;
 Sigma Geek Challenge;A challenge from Sigma Geek, in which we had to find large palindromic prime numbers in the decimal expansion of π (pi).;C, Python;https://github.com/matichewer/SigmaGeek_pi_challenge;;;;

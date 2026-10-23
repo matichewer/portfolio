@@ -7,7 +7,7 @@ const projectCards = [];
 let renderedColumnCount = 0;
 
 window.addEventListener("DOMContentLoaded", () => {
-  fetch("projects.csv?v=3")
+  fetch("projects.csv?v=4")
     .then((response) => response.text())
     .then((data) => {
       parseCSV(data).forEach((project) => {
